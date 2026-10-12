@@ -8,11 +8,11 @@ ExportFormat: csv
 Processors:
     -
         Executable: hayabusa\hayabusa.exe
-        CommandLine: dfir-timeline -d %sourceDirectory% --profile standard -w --quiet --utc -o %destinationDirectory%\hayabusa_events_offline.csv
+        CommandLine: dfir-timeline -d %sourceDirectory% --profile standard -w --quiet --utc -o %destinationDirectory%\hayabusa_events_offline.csv --no-summary 
         ExportFormat: csv
     -
         Executable: hayabusa\hayabusa.exe
-        CommandLine: dfir-timeline -d %sourceDirectory% --profile standard -w --quiet --utc -o %destinationDirectory%\hayabusa_events_offline.jsonl -t jsonl
+        CommandLine: dfir-timeline -d %sourceDirectory% --profile standard -w --quiet --utc -o %destinationDirectory%\hayabusa_events_offline.jsonl -t jsonl --no-summary 
         ExportFormat: json
 
 # Documentation
